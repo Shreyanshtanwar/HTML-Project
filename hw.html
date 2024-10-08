@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset><h1 style="text-align: center;"> PAYMENT FORM</h1></fieldset>
+    <h5 style="text-align: center;">Required Fields are Followed by *</h5>
+    <h2 style="text-align: center;"> CONTACT INFORMATION</h2>
+    <hr>
+    <br>
+    <label for="name" style="text-align: center;">Name *</label>
+    <input type="text" id="name" style="text-align: center;" required>
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>GENDER*</legend>
+        <label for="name">MALE</label>
+        <input type="radio" id="name" placeholder="Enter your First name" name="name" required>
+        <label for="last">FEMALE</label>
+        <input type="radio" id="last" placeholder="Enter your Last name" name="name" required>
+        <br>
+        
+    </fieldset>
+    <br>
+    <br>
+    <label for="address" style="text-align: center;">Address </label>
+    <textarea name="add" id="address"></textarea>
+    <br>
+    <br>
+    <label for="email;">EMAIL*</label>
+    <input type="text" id="email" style="text-align: center;" required>
+    <br>
+    <br>
+    <label for="code;">PINCODE*</label>
+    <input type="text" id="code" style="text-align: center;"  required>
+    <br>
+    <br>
+    <h1>PAYMENT INFORMATION</h1>
+    <br>
+    <label for="card;">CARD TYPE*</label>
+    <select name="card" id="card">
+        <option value="no value">--Select a Card Type--</option>
+        <option value="card">Credit Card</option>
+        <option value="card">Debit Card</option>
+    </select>
+    <br>
+    <br>
+    <label for="cn;">CARD NUMBER*</label>
+    <input type="text" id="cn" style="text-align: center" placeholder="Enter your card number" required>
+    <br>
+    <br>
+    <label for="dob">Expiration Date*</label>
+    <input type="date" id="dob" name="trip-start" value="2024-27-9" min="2000-1-1" max="2025-12-31" required>
+    <br>
+    <br>
+    <label for="cvv;">CVV*</label>
+    <input type="text" id="cvv" style="text-align: center" placeholder="CVV" required>
+    <br>
+    <br>
+    <input type="submit" value="Submit form">
+    <br>
+
+</body>
+</html>
